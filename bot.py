@@ -9,7 +9,7 @@ ID_BARDI = os.getenv("ID_BARDI", "a305cd32bdb0a988b2iiw6")
 ID_ITSMART = os.getenv("ID_ITSMART", "a300dc97aa5533b282l0qq")
 
 # Singapore Data Center - 【entity-Bardi¦canonical_name=BARDI】-bot-SIN
-openapi = TuyaOpenAPI(endpoint="https://openapi.tuyasg.com", access_id=TUYA_CLIENT_ID, access_key=TUYA_SECRET)
+openapi = TuyaOpenAPI("https://openapi.tuyasg.com", TUYA_CLIENT_ID, TUYA_SECRET)
 openapi.connect()
 
 intents = discord.Intents.default()
